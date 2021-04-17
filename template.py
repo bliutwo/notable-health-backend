@@ -1,8 +1,16 @@
-def solution(n, k):
-    return 0
+from typing import List
 
-a = list(map(int, input().split()))
-n = a[0]
-k = a[1]
+def get_input_from_file(filename: str) -> List[str]:
+    l = []
+    with open(filename) as f:
+        for line in f:
+            l.append(line)
+    return l
 
-print(solution(n, k))
+def main():
+    print("Hello world!")
+    filename = "patients.csv"
+    print(get_input_from_file(filename))
+
+if __name__ == "__main__":
+    main()
