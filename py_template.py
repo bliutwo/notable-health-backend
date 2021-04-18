@@ -1,4 +1,5 @@
 from typing import List
+import re
 
 
 def get_input_from_file_as_list_of_lines(filename: str) -> List[str]:
@@ -17,28 +18,21 @@ def get_input_from_file_as_single_string(filename: str) -> str:
     return s
 
 
-def find_and_replace_regex(text: str, reg_expr_str: str) -> str:
-    """
-    Write a function `find_and_replace_regex()` that takes two arguments:
-
-    - a string text *t*
-    - a regular expression string *r*
-
-    For every instance of text that matches the regular expression *r*, put two asterisks on each side of it.
-
-    Output: *t* with modifications as specified
-    """
-    return ""
-
 def main():
-    print("Hello world!")
-    filename = "lorem_ipsum.txt"
+    filename = "regexr_example.txt"
     t = get_input_from_file_as_single_string(filename)
 
     # Example of built-in .replace()
-    print(t.replace('ipsum', 'asdfghhljsdklfjkafjoiewajsajkbja'))
+    # print(t.replace('the', 'THEEEEE'))
 
-
+    # Example of built-in re.sub()
+    # pattern = r"([A-Z])\w+"
+    orig = t[:]
+    # re.sub(pattern, "CAPITAL WORD", t)
+    print(t)
+    re.sub(r"the", "CAPITAL WORD", t)
+    print(t)
+    assert(orig != t)
 
 
 if __name__ == "__main__":
