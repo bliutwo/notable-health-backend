@@ -26,6 +26,7 @@ def word_count_dictionary(text: str) -> Dict[str, int]:
             d[w] = 1
         else:
             d[w] += 1
+    # https://stackoverflow.com/questions/613183/how-do-i-sort-a-dictionary-by-value
     d = dict(sorted(d.items(), key=lambda item: item[1], reverse=True))
     return d
 
