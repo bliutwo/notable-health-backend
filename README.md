@@ -10,13 +10,15 @@ I came up with this.
 
 ### Find and replace, no regex
 
-Write a function `find_and_replace()` that takes three arguments:
+Python has a built-in function called `.replace()`: https://www.geeksforgeeks.org/python-string-replace/
 
-- a string text *t*, which is the text used to search and replace
-- a string variable *query*, which is the query to find
-- a string variable *replace*, which is what you should replace every instance of *query* with
+~~Write a function `find_and_replace()` that takes three arguments:~~
 
-Output: modified *t* with all instances of *query* replaced with *replace*
+- ~~a string text *t*, which is the text used to search and replace~~
+- ~~a string variable *query*, which is the query to find~~
+- ~~a string variable *replace*, which is what you should replace every instance of *query* with~~
+
+~~Output: modified *t* with all instances of *query* replaced with *replace*~~
 
 ### Find and replace with regex
 
