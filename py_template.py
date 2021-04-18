@@ -37,6 +37,7 @@ def main():
     s = get_input_from_file_as_single_string(f1)
     t = get_input_from_file_as_single_string(f2)
 
+    # Print the word counts sorted by frequency
     print(word_count_dictionary(s))
     print()
     print(word_count_dictionary(t))
