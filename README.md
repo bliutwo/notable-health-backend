@@ -12,21 +12,6 @@ I came up with these potentially (but kind of failed lol) useful prompts.
 
 Python has a built-in function called `.replace()`: https://www.geeksforgeeks.org/python-string-replace/
 
-~~Write a function `find_and_replace()` that takes three arguments:~~
-
-- ~~a string text *t*, which is the text used to search and replace~~
-- ~~a string variable *query*, which is the query to find~~
-- ~~a string variable *replace*, which is what you should replace every instance of *query* with~~
-
-~~Output: modified *t* with all instances of *query* replaced with *replace*~~
-
 ### Find and replace with regex
 
-Write a function `find_and_replace_regex()` that takes two arguments:
-
-- a string text *t*
-- a regular expression string *r*
-
-For every instance of text that matches the regular expression *r*, put two asterisks on each side of it.
-
-Output: *t* with modifications as specified
+Since I want to change the specifications, I'll just keep it in one place, which is the docstring of the function.
