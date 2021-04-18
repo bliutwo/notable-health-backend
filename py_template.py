@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Dict
 import re
 
 
@@ -18,12 +18,28 @@ def get_input_from_file_as_single_string(filename: str) -> str:
     return s
 
 
+def word_count_dictionary(text: str) -> Dict[str, int]:
+    words = text.split()
+    d = {}
+    for w in words:
+        if w not in d:
+            d[w] = 1
+        else:
+            d[w] += 1
+    d = dict(sorted(d.items(), key=lambda item: item[1], reverse=True))
+    return d
+
+
 def main():
-    filename = "regexr_example.txt"
-    t = get_input_from_file_as_single_string(filename)
+    f1 = "lorem_ipsum.txt"
+    f2 = "regexr_example.txt"
+    s = get_input_from_file_as_single_string(f1)
+    t = get_input_from_file_as_single_string(f2)
+
+    print(word_count_dictionary(s))
 
     # Example of built-in .replace()
-    # print(t.replace('the', 'THEEEEE'))
+    print(s.replace('the', 'THEEEEE'))
 
     # Example of built-in re.sub()
     pattern = "([A-Z])\w+"
