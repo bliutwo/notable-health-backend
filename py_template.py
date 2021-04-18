@@ -38,6 +38,9 @@ def main():
     t = get_input_from_file_as_single_string(f2)
 
     print(word_count_dictionary(s))
+    print()
+    print(word_count_dictionary(t))
+    print()
 
     # Example of built-in .replace()
     print(s.replace('the', 'THEEEEE'))
