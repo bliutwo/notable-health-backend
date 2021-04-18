@@ -26,13 +26,10 @@ def main():
     # print(t.replace('the', 'THEEEEE'))
 
     # Example of built-in re.sub()
-    # pattern = r"([A-Z])\w+"
-    orig = t[:]
-    # re.sub(pattern, "CAPITAL WORD", t)
+    pattern = "([A-Z])\w+"
+    replace = "CAPITAL WORD"
+    t = re.sub(pattern, replace, t)
     print(t)
-    re.sub(r"the", "CAPITAL WORD", t)
-    print(t)
-    assert(orig != t)
 
 
 if __name__ == "__main__":
