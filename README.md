@@ -15,3 +15,5 @@ Python has a built-in function called `.replace()`: https://www.geeksforgeeks.or
 ### Find and replace with regex
 
 Since I want to change the specifications, I'll just keep it in one place, which is the docstring of the function.
+
+Looks like there's a `re.sub()` function: https://docs.python.org/3/library/re.html#re.sub
