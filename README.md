@@ -17,3 +17,7 @@ Python has a built-in function called `.replace()`: https://www.geeksforgeeks.or
 Since I want to change the specifications, I'll just keep it in one place, which is the docstring of the function.
 
 Looks like there's a `re.sub()` function: https://docs.python.org/3/library/re.html#re.sub
+
+### Find and replace first-letter-capitalized words with all lower-case words
+
+I'm not sure how to do this yet, so let's figure that out.
