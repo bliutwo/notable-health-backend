@@ -6,7 +6,7 @@ This repo will contain whatever Notable Health asks me to implement.
 
 ## Preparation Prompt
 
-I came up with these potential (but kind of failed lol) potentially useful prompts.
+I came up with these potentially (but kind of failed lol) useful prompts.
 
 ### Find and replace, no regex
 
