@@ -8,7 +8,13 @@ This repo will contain whatever Notable Health asks me to implement.
 
 [NLTK](https://www.nltk.org/)
 
-[Solve the Equation Leetcode](https://leetcode.com/problems/solve-the-equation/)
+[TextBlob](https://textblob.readthedocs.io/en/dev/)
+
+[Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+
+[Basic Calculator 2](https://leetcode.com/problems/basic-calculator-ii/)
+
+[Parsing a Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/)
 
 ## Preparation Prompt
 
