@@ -6,15 +6,20 @@ This repo will contain whatever Notable Health asks me to implement.
 
 ## More resources
 
-[NLTK](https://www.nltk.org/)
 
-[TextBlob](https://textblob.readthedocs.io/en/dev/)
+- [ ]  [Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+ 
+- [ ]  [Basic Calculator 2](https://leetcode.com/problems/basic-calculator-ii/)
+ 
+- [ ]  [Basic Calculator 3](https://leetcode.com/problems/basic-calculator-iii/)
+ 
+- [ ]  [Basic Calculator 4](https://leetcode.com/problems/basic-calculator-iv/)
 
-[Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+- [ ]  [NLTK](https://www.nltk.org/)
 
-[Basic Calculator 2](https://leetcode.com/problems/basic-calculator-ii/)
+- [ ]  [TextBlob](https://textblob.readthedocs.io/en/dev/)
 
-[Parsing a Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/)
+- [ ]  [Parsing a Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/)
 
 ## Preparation Prompt
 
