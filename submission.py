@@ -29,8 +29,11 @@ def determine_first_number(text: str) -> int:
     return numbers_to_integers[number]
 
 def capitalize_first_letter(text: str) -> str:
-    # if text:
-    #     text = text.capitalize()
+    if text:
+        c = text[0]
+        if c.islower():
+            c = c.upper()
+            text = c + text[1:]
     return text
 
 def transform(text: str) -> str:
@@ -47,6 +50,7 @@ def transform(text: str) -> str:
             ans += '\n'
             ans += str(start)
             ans += '. '
+            s = s.lstrip()
             ans += capitalize_first_letter(s)
             start += 1
     return ans
