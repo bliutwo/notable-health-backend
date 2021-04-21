@@ -50,6 +50,7 @@ def transform(text: str) -> str:
             ans += '\n'
             ans += str(start)
             ans += '. '
+            # Remove extra whitespace on left side of string
             s = s.lstrip()
             ans += capitalize_first_letter(s)
             start += 1
