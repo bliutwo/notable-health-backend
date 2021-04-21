@@ -2,14 +2,6 @@ from typing import List, Dict
 import re
 
 
-def get_input_from_file_as_list_of_lines(filename: str) -> List[str]:
-    l = []
-    with open(filename) as f:
-        for line in f:
-            l.append(line)
-    return l
-
-
 def get_input_from_file_as_single_string(filename: str) -> str:
     s = ""
     with open(filename) as f:
@@ -17,26 +9,29 @@ def get_input_from_file_as_single_string(filename: str) -> str:
             s += line
     return s
 
+def determine_first_number(text: str) -> int:
+    return 1
 
-def word_count_dictionary(text: str) -> Dict[str, int]:
-    words = text.split()
-    d = {}
-    for w in words:
-        if w not in d:
-            d[w] = 1
-        else:
-            d[w] += 1
-    # https://stackoverflow.com/questions/613183/how-do-i-sort-a-dictionary-by-value
-    d = dict(sorted(d.items(), key=lambda item: item[1], reverse=True))
-    return d
-
+def capitalize_first_letter(text: str) -> str:
+    return text
 
 def transform(text: str) -> str:
-    output = ""
+    start = determine_first_number(text)
     pattern = "[Nn]umber [a-z]+"
     replace = "INSERTION_PLACE"
     output = re.sub(pattern, replace, text)
-    return output
+    l = output.split("INSERTION_PLACE")
+    ans = ""
+    for i, s in enumerate(l):
+        if i == 0:
+            ans += s
+        else:
+            ans += '\n'
+            ans += str(start)
+            ans += '. '
+            ans += capitalize_first_letter(s)
+            start += 1
+    return ans
 
 
 def write_to_file(text, filename):
@@ -49,18 +44,10 @@ def main():
     input = get_input_from_file_as_single_string(input_filename)
 
     output = transform(input)
+    print(output)
 
     output_filename = "output.txt"
     write_to_file(output, output_filename)
-
-    # Example of built-in .replace()
-    # print(s.replace('the', 'THEEEEE'))
-
-    # Example of built-in re.sub()
-    # pattern = "([A-Z])\w+"
-    # replace = "CAPITAL WORD"
-    # t = re.sub(pattern, replace, t)
-    # print(t)
 
 
 if __name__ == "__main__":
