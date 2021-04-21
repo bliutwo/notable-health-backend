@@ -2,6 +2,19 @@ from typing import List, Dict
 import re
 
 
+numbers_to_integers = {
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+}
+
+
 def get_input_from_file_as_single_string(filename: str) -> str:
     s = ""
     with open(filename) as f:
@@ -10,9 +23,14 @@ def get_input_from_file_as_single_string(filename: str) -> str:
     return s
 
 def determine_first_number(text: str) -> int:
-    return 1
+    pattern = "[Nn]umber ([a-z]+)"
+    match = re.search(pattern, text)
+    number = match.group(1)
+    return numbers_to_integers[number]
 
 def capitalize_first_letter(text: str) -> str:
+    # if text:
+    #     text = text.capitalize()
     return text
 
 def transform(text: str) -> str:
